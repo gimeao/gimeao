@@ -51,7 +51,51 @@ Sou João Gime, programador web. Trabalho com PHP e JavaScript. Este perfil reú
   </picture>
 </div>
 
-<!-- Para exibir a Snake, configure uma GitHub Action que gere os arquivos SVG e publique-os na branch output. <citation src="2,5"></citation> -->
+<!-- A imagem da Snake precisa dos SVGs publicados na branch output por uma GitHub Action. O README sozinho não executa a Action. <citation src="1,3"></citation> -->
+
+<details>
+  <summary>Configuração necessária para gerar a Snake</summary>
+
+Crie o arquivo `.github/workflows/snake.yml` no repositório de perfil `gimeao/gimeao` com este conteúdo. Depois, execute o workflow pela aba **Actions**. Se a publicação falhar por permissões, habilite **Read and write permissions** nas configurações de Actions do repositório.
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: gimeao
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Publish SVGs to the output branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+<!-- A Action gera os arquivos definidos em outputs e os publica na branch indicada. <citation src="1,2,3"></citation> -->
+
+</details>
 
 ## Redes sociais
 
@@ -69,3 +113,4 @@ Sou João Gime, programador web. Trabalho com PHP e JavaScript. Este perfil reú
 <div align="center">
   <sub>Obrigado pela visita. Até a próxima linha de código.</sub>
 </div>
+````*
