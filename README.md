@@ -85,17 +85,18 @@ Quando tiver projetos, apague a tabela acima e use cards assim
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gimeao&bg_color=0a0a0a&color=2f81f7&line=2f81f7&point=ffffff&area=true&area_color=1f6feb&hide_border=true" alt="Activity Graph" width="100%" />
+<img src="https://ghchart.rshah.org/2f81f7/gimeao" alt="Contribuições de gimeao" width="90%" />
 
 </div>
 
 ---
 
-## 🏆 Troféus
+## 🏆 Conquistas
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=gimeao&theme=darkhub&no-frame=true&no-bg=true&margin-w=12&row=1&column=7" alt="GitHub Trophies" />
+<img src="https://img.shields.io/github/followers/gimeao?style=for-the-badge&logo=github&logoColor=2f81f7&labelColor=0a0a0a&color=1f6feb" alt="Seguidores" />
+<img src="https://img.shields.io/github/last-commit/gimeao/gimeao?style=for-the-badge&logo=git&logoColor=2f81f7&labelColor=0a0a0a&color=1f6feb" alt="Último commit" />
 
 </div>
 
