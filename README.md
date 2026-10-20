@@ -31,7 +31,7 @@ Este perfil reúne meus projetos e atividades no GitHub.
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=php,js,html,css,mysql,git&theme=dark" alt="Tecnologias" />
+<img src="https://skillicons.dev/icons?i=php,js,html,css,c#,mysql,git&theme=dark" alt="Tecnologias" />
 
 </div>
 
